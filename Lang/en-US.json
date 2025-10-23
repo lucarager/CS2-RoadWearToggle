@@ -1,8 +1,15 @@
 {
-  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "RoadWear Tool Toggle",
+  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Toggle Road Wear with Road Tool",
   "Options.TAB[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Main",
   "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Buttons",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide RoadWear when not in Net/Road Tool",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide Road wear when not in Net/Road Tool",
   "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Enabling this option will hide Road Wear lane markings when not in using net/road tool.",
-  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod settings"
+  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod settings",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Version]": "Version",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.InformationalVersion]": "Informational Version",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Credits]": "",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "GitHub",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "Opens a browser window to https://github.com/lucarager/CS2-RoadWearToggle",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Discord",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Opens link to join the CS:2 Modding Discord"
 }

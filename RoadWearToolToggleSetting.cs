@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Colossal;
 using Colossal.IO.AssetDatabase;
 using Game.Input;
@@ -8,15 +9,18 @@ using Game.Settings;
 using Game.UI;
 using Game.UI.Widgets;
 using Unity.Entities;
+using UnityEngine;
 
 namespace RoadWearToolToggle
 {
     [FileLocation(nameof(RoadWearToolToggle))]
-    [SettingsUIGroupOrder(kGroup)]
+    [SettingsUIGroupOrder(kGroup, kAboutGroup)]
      public class RoadWearToolToggleSetting : ModSetting
     {
-        public const string kSection = "Main";
-        public const string kGroup = "Main";
+        public const  string kSection    = "Main";
+        public const  string kGroup      = "Main";
+        public const  string kAboutGroup = "About";
+        private const string Credit      = "Made with <3 by Luca.";
 
         public RoadWearToolToggleSetting(IMod mod) : base(mod) {
 
@@ -32,6 +36,37 @@ namespace RoadWearToolToggle
                 
                 if (!value) {
                     World.DefaultGameObjectInjectionWorld?.GetOrCreateSystemManaged<RoadWearToggleSystem>().Reset();
+                }
+            }
+        }
+
+        [SettingsUISection(kAboutGroup)]
+        public string Version => RoadWearToolToggleMod.Version;
+
+        [SettingsUISection(kAboutGroup)]
+        public string InformationalVersion => RoadWearToolToggleMod.InformationalVersion;
+
+        [SettingsUISection(kAboutGroup)]
+        public string Credits => Credit;
+
+        [SettingsUISection(kAboutGroup)]
+        public bool Github {
+            set {
+                try {
+                    Application.OpenURL($"https://github.com/lucarager/CS2-RoadWearToggle");
+                } catch (Exception e) {
+                    Debug.LogException(e);
+                }
+            }
+        }
+
+        [SettingsUISection(kAboutGroup)]
+        public bool Discord {
+            set {
+                try {
+                    Application.OpenURL($"https://discord.gg/QFxmPa2wCa");
+                } catch (Exception e) {
+                    Debug.LogException(e);
                 }
             }
         }
@@ -55,12 +90,22 @@ namespace RoadWearToolToggle
                 { m_RoadWearToolToggleSetting.GetSettingsLocaleID(), "RoadWear Tool Toggle" },
                 { m_RoadWearToolToggleSetting.GetOptionTabLocaleID(RoadWearToolToggleSetting.kSection), "Main" },
 
-                { m_RoadWearToolToggleSetting.GetOptionGroupLocaleID(RoadWearToolToggleSetting.kGroup), "Buttons" },
+                { m_RoadWearToolToggleSetting.GetOptionGroupLocaleID(RoadWearToolToggleSetting.kGroup), "Settings" },
+                { m_RoadWearToolToggleSetting.GetOptionGroupLocaleID(RoadWearToolToggleSetting.kAboutGroup), "About" },
 
                 { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.Enabled)), "Hide RoadWear when not in Net/Road Tool" },
                 { m_RoadWearToolToggleSetting.GetOptionDescLocaleID(nameof(RoadWearToolToggleSetting.Enabled)), $"Enabling this option will hide Road Wear lane markings when not in using net/road tool." },
 
                 { m_RoadWearToolToggleSetting.GetBindingMapLocaleID(), "Mod settings" },
+
+                // About
+                { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.Version)), "Version" },
+                { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.InformationalVersion)), "Informational Version" },
+                { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.Credits)), string.Empty },
+                { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.Github)), "GitHub" },
+                { m_RoadWearToolToggleSetting.GetOptionDescLocaleID(nameof(RoadWearToolToggleSetting.Github)), "Opens a browser window to https://github.com/lucarager/CS2-RoadWearToggle" },
+                { m_RoadWearToolToggleSetting.GetOptionLabelLocaleID(nameof(RoadWearToolToggleSetting.Discord)), "Discord" },
+                { m_RoadWearToolToggleSetting.GetOptionDescLocaleID(nameof(RoadWearToolToggleSetting.Discord)), "Opens link to join the CS:2 Modding Discord" },
             };
         }
 

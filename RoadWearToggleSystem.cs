@@ -17,31 +17,23 @@
             m_Shader                      =  Shader.Find("BH/Decals/CurvedDecalDeteriorationShader");
             m_ToolSystem.EventToolChanged += OnToolChanged;
 
-            RoadWearToolToggleMod.Instance.Log.Debug("OnCreate()");
+            if (RoadWearToolToggleMod.Instance.Settings.Enabled) {
+                m_RenderingSystem.SetShaderEnabled(m_Shader, false);
+            }
+
+            base.OnCreate();
         }
 
         protected override void OnUpdate() { }
-
-        protected override void OnGameLoadingComplete(Purpose purpose, GameMode mode) {
-            var shouldToggle = RoadWearToolToggleMod.Instance.Settings.Enabled;
-
-            if (shouldToggle) {
-                m_RenderingSystem.SetShaderEnabled(m_Shader, false);
-            }
-        }
 
         private void OnToolChanged(ToolBaseSystem tool) {
             if (tool?.toolID == null) {
                 return;
             }
 
-            RoadWearToolToggleMod.Instance.Log.Debug("OnUpdate()");
-
             var shouldToggle = RoadWearToolToggleMod.Instance.Settings.Enabled;
             var shouldBeOn   = m_ToolSystem.activeTool is NetToolSystem;
             var isOn         = m_RenderingSystem.IsShaderEnabled(m_Shader);
-
-            RoadWearToolToggleMod.Instance.Log.Debug($"{shouldToggle} {shouldBeOn}  {m_Shader} {isOn}");
 
             if (!shouldToggle || shouldBeOn == isOn) {
                 return;
@@ -51,7 +43,6 @@
         }
 
         public void Reset() {
-            RoadWearToolToggleMod.Instance.Log.Debug("Reset()");
             m_RenderingSystem.SetShaderEnabled(m_Shader, true);
         }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using Colossal;
 using Colossal.IO.AssetDatabase;
 using Colossal.Localization;
@@ -69,19 +70,19 @@ namespace RoadWearToolToggle
             // Initialize logger.
             Log = LogManager.GetLogger(ModName);
 #if IS_DEBUG
-            Log.Info("{Id} Setting logging level to Debug");
+            Log.Info($"[{Id}] Setting logging level to Debug");
             Log.effectivenessLevel = Level.Debug;
 #endif
-            Log.Info($"{Id} Loading {ModName} version {Assembly.GetExecutingAssembly().GetName().Version}");
+            Log.Info($"[{Id}] Loading {ModName} version {Assembly.GetExecutingAssembly().GetName().Version}");
 
             // Initialize Settings
             Settings = new RoadWearToolToggleSetting(this);
 
             // Load i18n
             GameManager.instance.localizationManager.AddSource("en-US", new LocaleEN(Settings));
-            Log.Info($"{Id} Loaded en-US.");
+            Log.Info($"[{Id}] Loaded en-US.");
             LoadNonEnglishLocalizations();
-            Log.Info($"{Id} Loaded localization files.");
+            Log.Info($"[{Id}] Loaded localization files.");
 
             // Generate i18n files
 #if IS_DEBUG && EXPORT_EN_US
@@ -102,21 +103,25 @@ namespace RoadWearToolToggle
         }
 
         private void GenerateLanguageFile() {
-            Log.Info($"{Id} Exporting localization");
+            Log.Info($"[{Id}] Exporting localization");
             var localeDict = new LocaleEN(Settings).ReadEntries(new List<IDictionaryEntryError>(), new Dictionary<string, int>()).ToDictionary(pair => pair.Key, pair => pair.Value);
             var str = JsonConvert.SerializeObject(localeDict, Newtonsoft.Json.Formatting.Indented);
             try {
-                var path = "C:\\Users\\lucar\\source\\repos\\RoadWearToolToggle\\Lang\\en-US.json";
-                Log.Info($"{Id} Exporting to {path}");
+                var path = $@"{GetSourceDirectoryPath()}\Lang\en-US.json";
+                Log.Info($"[{Id}] Exporting to {path}");
                 File.WriteAllText(path, str);
             } catch (Exception ex) {
                 Log.Error(ex.ToString());
             }
         }
 
+        public static string GetSourceDirectoryPath([CallerFilePath] string sourceFilePath = "") {
+            return Path.GetDirectoryName(sourceFilePath);
+        }
+
         /// <inheritdoc/>
         public void OnDispose() {
-            Log.Info("{Id} Disposing");
+            Log.Info($"[{Id}] Disposing");
             Instance = null;
 
             // Clear settings menu entry.
