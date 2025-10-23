@@ -8,7 +8,7 @@
 	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
 	<!--LongDescription Value="This is a long description" /-->
 	<LongDescription>
-		Simple mod that will only show road wear (or 'lanes') when using the road tool.
+		This mod will hide road wear (or 'lanes') by default, and only show them when using the road tool.
 		The option can be enabled/disabled in the Settings menu.
 	</LongDescription>
 	<!--Thumbnail-->
@@ -33,6 +33,6 @@
 		* Published initial version.
 	</ChangeLog>
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->
-	<ExternalLink Type="" Url="" />
+	<ExternalLink Type="github" Url="https://github.com/lucarager/CS2-RoadWearToggle" />
 	<ExternalLink Type="discord" Url="https://discord.gg/HTav7ARPs2" />
 </Publish>
