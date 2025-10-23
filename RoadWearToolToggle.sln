@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadWearToolToggle", "RoadWearToolToggle.csproj", "{A248B0BD-8F16-4E51-9BCD-D0433FA47384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		I18N|Any CPU = I18N|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.I18N|Any CPU.ActiveCfg = I18N|Any CPU
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.I18N|Any CPU.Build.0 = I18N|Any CPU
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A248B0BD-8F16-4E51-9BCD-D0433FA47384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81E194D6-D121-46F0-9539-07F293428CAD}
+	EndGlobalSection
+EndGlobal
