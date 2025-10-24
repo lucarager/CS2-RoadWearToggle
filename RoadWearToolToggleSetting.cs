@@ -15,9 +15,9 @@ namespace RoadWearToolToggle
 {
     [FileLocation(nameof(RoadWearToolToggle))]
     [SettingsUIGroupOrder(kGroup, kAboutGroup)]
-     public class RoadWearToolToggleSetting : ModSetting
+    [SettingsUIShowGroupName(kGroup, kAboutGroup)]
+    public class RoadWearToolToggleSetting : ModSetting
     {
-        public const  string kSection    = "Main";
         public const  string kGroup      = "Main";
         public const  string kAboutGroup = "About";
         private const string Credit      = "Made with <3 by Luca.";
@@ -28,7 +28,7 @@ namespace RoadWearToolToggle
 
         private bool m_Enabled = true;
 
-        [SettingsUISection(kSection, kGroup)]
+        [SettingsUISection(kGroup)]
         public bool Enabled {
             get => m_Enabled;
             set {
@@ -88,7 +88,6 @@ namespace RoadWearToolToggle
             return new Dictionary<string, string>
             {
                 { m_RoadWearToolToggleSetting.GetSettingsLocaleID(), "RoadWear Tool Toggle" },
-                { m_RoadWearToolToggleSetting.GetOptionTabLocaleID(RoadWearToolToggleSetting.kSection), "Main" },
 
                 { m_RoadWearToolToggleSetting.GetOptionGroupLocaleID(RoadWearToolToggleSetting.kGroup), "Settings" },
                 { m_RoadWearToolToggleSetting.GetOptionGroupLocaleID(RoadWearToolToggleSetting.kAboutGroup), "About" },

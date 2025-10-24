@@ -17,14 +17,22 @@
             m_Shader                      =  Shader.Find("BH/Decals/CurvedDecalDeteriorationShader");
             m_ToolSystem.EventToolChanged += OnToolChanged;
 
-            if (RoadWearToolToggleMod.Instance.Settings.Enabled) {
-                m_RenderingSystem.SetShaderEnabled(m_Shader, false);
-            }
-
             base.OnCreate();
         }
 
         protected override void OnUpdate() { }
+
+        protected override void OnGameLoadingComplete(Purpose purpose, GameMode mode) {
+            base.OnGameLoadingComplete(purpose, mode);
+
+            if (mode != GameMode.Game) {
+                return;
+            }
+
+            if (RoadWearToolToggleMod.Instance.Settings.Enabled) {
+                m_RenderingSystem.SetShaderEnabled(m_Shader, false);
+            }
+        }
 
         private void OnToolChanged(ToolBaseSystem tool) {
             if (tool?.toolID == null) {
