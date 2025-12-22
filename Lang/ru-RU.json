@@ -1,8 +1,8 @@
 {
-  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Toggle Road Wear with Road Tool",
-  "Options.TAB[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Main",
-  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Buttons",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide Road wear when not in Net/Road Tool",
+  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "RoadWear Tool Toggle",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Settings",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.About]": "About",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide RoadWear when not in Net/Road Tool",
   "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Enabling this option will hide Road Wear lane markings when not in using net/road tool.",
   "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod settings",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Version]": "Version",
