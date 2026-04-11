@@ -1,15 +1,15 @@
 {
-  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "RoadWear Tool Toggle",
-  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Settings",
-  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.About]": "About",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide RoadWear when not in Net/Road Tool",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Enabling this option will hide Road Wear lane markings when not in using net/road tool.",
-  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod settings",
+  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "RoadWear-Werkzeug-Umschalter",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Einstellungen",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.About]": "Über",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "„RoadWear“ ausblenden, wenn es nicht im Netz-/Straßen-Tool enthalten ist",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Wenn Sie diese Option aktivieren, werden die Fahrbahnmarkierungen für den Straßenverschleiß ausgeblendet, sofern das Netz-/Straßen-Werkzeug nicht verwendet wird.",
+  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod-Einstellungen",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Version]": "Version",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.InformationalVersion]": "Informational Version",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.InformationalVersion]": "Informationsversion",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Credits]": "",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "GitHub",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "Opens a browser window to https://github.com/lucarager/CS2-RoadWearToggle",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "Öffnet ein Browserfenster mit der Adresse https://github.com/lucarager/CS2-RoadWearToggle",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Discord",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Opens link to join the CS:2 Modding Discord"
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Öffnet den Link zum Beitritt zum CS:2-Modding-Discord"
 }
