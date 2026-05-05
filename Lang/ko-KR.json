@@ -1,15 +1,15 @@
 {
-  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "RoadWear Tool Toggle",
-  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "Settings",
-  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.About]": "About",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Hide RoadWear when not in Net/Road Tool",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "Enabling this option will hide Road Wear lane markings when not in using net/road tool.",
-  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "Mod settings",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Version]": "Version",
-  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.InformationalVersion]": "Informational Version",
+  "Options.SECTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "도로 마모 도구 토글(RoadWear Tool Toggle)",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.Main]": "설정",
+  "Options.GROUP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.About]": "정보",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "네트워크/도로 도구가 아닐 때 도로 마모 숨기기",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Enabled]": "이 옵션을 활성화하면 네트워크 또는 도로 도구를 사용 중이 아닐 때 도로 마모 차선 표시를 숨깁니다.",
+  "Options.INPUT_MAP[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod]": "모드 설정",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Version]": "버전",
+  "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.InformationalVersion]": "정보 버전",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Credits]": "",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "GitHub",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "Opens a browser window to https://github.com/lucarager/CS2-RoadWearToggle",
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Github]": "브라우저를 열어 https://github.com/lucarager/CS2-RoadWearToggle 페이지로 이동합니다",
   "Options.OPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Discord",
-  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "Opens link to join the CS:2 Modding Discord"
+  "Options.OPTION_DESCRIPTION[RoadWearToolToggle.RoadWearToolToggle.RoadWearToolToggleMod.RoadWearToolToggleSetting.Discord]": "CS:2 모딩 디스코드 참여 링크를 엽니다"
 }
